@@ -13089,7 +13089,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -13168,7 +13168,7 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<p>Il faut utiliser l'outil blastn, car nous allons travailler sur une séquences de nucléotides qui ne contient que des A,C,T,G</p>
 
 </div>
 </div>
@@ -13184,7 +13184,7 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<p>Il s'agit de l'organisme Drosophila melanogaster et c'est le gène Bicoïd qui est un gène à effet maternel déposé dans l’ovocyte par la femelle lors de l’ovogenèse</p>
 
 </div>
 </div>
@@ -13208,7 +13208,7 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">SeqIO</span>
@@ -13223,7 +13223,7 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;labo-1_sequence_inconnue.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="c1"># r = open for reading (default)</span>
@@ -13233,6 +13233,24 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>ACAGCCCGACAGGGGGCTTTCTACTGCTGTCTCTTCACGCCCCCTGGTGAAAACGCCGTGCACTCAATCGGTTTGCAGCTTTGCCGTACTGTTCGATTAAAAACTTTTAAATTAGAGGCAAACATTTAAAAATAAAATGTCCAAATATTTGTCTAAAATGTATTGTAGACGCTTATTGATTTTTAAATTACTCAAAAGAATGAACATCGAGGGAGGGCCGCCAATTGTGCCATCTCTACATCTCTTCGCTCATCCCTAAATAACGGCACTCTGCAGATGCGAAGCAGTGGATCGCAAAAACGCAAAATGTGGGCGAAATAAGTTCGCGAGCGTCTCGAAAGTAACCGGTTACTGAAAATACAAGAAAGTTTCCACACTCCTTTGCCATTTTTCCGCGCGGCGCTTGGAAATTCGTAAAGATAACGCGGCGGAGTGTTTGGGGAAAATGGCGCAACCGCCGCCAGATCAAAACTTTTACCATCATCCGCTGCCCCACACGCACACACATCCGCATCCGCACTCCCATCCGCATCCGCACTCGCATCCGCACCCACATCACCAACATCCGCAGCTTCAGTTGCCGCCACAATTCCGAAATCCCTTCGATTTGGTGAGTTCCCATCGCAGCAGAGAAGGGCTCTTGTCCCAGGAAAGCTACAGTACAGATTCCCTATGGTGAACAAACAACCAGTGCGATCACTGATGACCATAAACATTTATTGAGCCGCAGCAAATGTGTTTCTAGAACATAGGGCGAAATCTTCTATTATCTTGTTTGTGACTTTTAAAGTATCGTAGCAGAATCTAAATAACAATTGATATTATTAATCGTTACAGTTAGTATAGTATATAATTGTATATGAATTGTGGGGCAACATGTTATTAGTGATTTGCCGAAATGTTCTAAAAGATGTTTCATTGAAATGGACGAATGTTAAACCTGTTGCACTCACACCGACAATCAGTAATGTCTATTTTTCAAAAGCCACATCTATGGCCACTGGGTATACATTATTGACTTTATACACTTCATACAACATATTTTCAAAAACAAGCATTGTTGTCCTGCATGATGATTAGTGAAAGTAATATTGCAAGCTTCGGTCCCCGAAGCGAATCGTCCTTTCACGTTTTTATATAAAGACAGTGTACCCCTTGATTCTTTGAAGCTTTTCGATGAGCGAACGGGAGCGATAAACTACAACTACATACGTCCGTATCTGCCCAACCAGATGCCCAAGCCAGGTGAGCTCAAAGCCAACAAAGTCAGCCATCGTCTTATCAGATGTCTTTCCCTCAGAGGAGCTGCCCGACTCTCTGGTGATGCGGCGACCACGTCGCACCCGCACCACTTTTACCAGCTCTCAAATAGCAGAGCTGGAGCAGCACTTTCTGCAGGGACGATACCTCACAGCCCCCCGACTTGCGGATCTGTCAGCGAAACTAGCCCTGGGCACAGCCCAGGTGAAGATATGGTTTAAGAACCGTCGGCGTCGTCACAAGATCCAATCGGATCAGCACAAGGACCAGTCCTACGAGGGGATGCCTCTCTCGCCGGGTATGAAACAGAGCGATGGCGATCCCCCCAGCTTGCAGACTCTTAGCTTGGGTGGAGGAGCCACGCCCAACGCTTTGACTCCGTCACCCACGCCCTCAACGCCCACTGCACACATGACGGAGCACTACAGCGAGTCATTCAACGCCTACTACAACTACAATGGAGGCCACAATCACGCCCAGGCCAATCGTCACATGCACATGCAGTATCCTTCCGGAGGGGGGCCAGGACCTGGGTCGACCAATGTCAATGGCGGCCAGTTCTTCCAGCAGCAGCAGGTCCATAATCACCAGCAGCAACTGCACCACCAGGGCAACCACGTGCCGCACCAGATGCACCAGCAGCAACAGCAGGCTCAGCAGCAGCAATACCATCACTTTGACTTCCAGCAAAAGCAAGCCAGCGCCTGTCGCGTCCTGGTCAAGGACGAACCGGAGGCCGACTACAACTTCAACAGCTCGTACTACATGCGATCGGGAATGTCTGGCGCCACTGCATCGGCATCCGCTGTGGCCCGAGGCGCTGCCTCGCCGGGCTCCGAGGTCTACGAGCCATTAACACCCAAGAATGACGAAAGTCCGAGTCTGTGTGGCATCGGCATCGGCGGACCTTGCGCCATCGCCGTTGGCGAGACGGAGGCGGCCGACGACATGGACGACGGAACGAGCAAGAAGACGACGCTACAGGTCAGGCATGAGTCCACAACCTTTTTTGATCTCTTGATTCTGAGTGTGGCGTTTATAAATTGAAGCTTTAAGCTTTGTAACTTTCAAACTGTCTGGTTTGAGATGTTATTCTGAAAGTACTTCTATTTCCGATCGATGAGATTTGGGAGTTCTCCAATATTTAACATTTAACTTATTAAGTTTTTGTTTTCTAAATTAGACATGGCATTTCTGAAAGGGAAGTACAAGTGTTAAAGATGTATTTTAATATAGAATTTGTATCAAAGGTTAAGATTTCAACCGTTTGAAAGCCCTTAGTTTTCAGGGTTTTTTACTTTTTTATTCATGTAATCACTCTTAATACACTGCAAGTTAAAATAGCATTTCTTTGACCAGAAAAATAAGATCTATGCATTTTAAAAGTGAAAACAGACTCATATGCTGATGAACATTTTTAGCTATAAATTGTAACAATAATTTAGCAATTTCAATTGAATTTATTTATGTTCTAAATGCGTTCGCTCTCTCCCTAGATCTTGGAGCCTTTGAAGGGTCTGGACAAGAGCTGCGACGATGGCAGTAGCGACGACATGAGCACCGGAATAAGAGCCTTAGCAGGAACCGGAAATCGTGGAGCGGCATTTGCCAAATTTGGCAAGCCTTCGCCCCCACAAGGCCCTCAGCCGCCCCTCGGGATGGGGGGCGTGGCCATGGGCGAATCGAACCAATATCAATGCACGATGGATACGATAATGCAAGCGTATAATCCCCATCGGAACGCCGCGGGCAACTCGCAGTTTGCCTACTGCTTCAATTAGCCTGGACGAGAGGCGTGTTAGAGAGTTTCATTAGCTTTAGGTTAACCACTGTTGTTCCTGATTGTACAAATACCAAGTGATTGTAGATATCTACGCGTAGAAAGTTAGGTCTAGTCCTAAGATCCGTGTAAATGGTTCCCAGGGAAGTTTTATGTACTAGCCTAGTCAGCAGGCCGCACGGATTCCAGTGCATATCTTAGTGATACTCCAGTTAACTCTATACTTTCCCTGCAATACGCTATTCGCCTTAGATGTATCTGGGTGGCTGCTCCACTAAAGCCCGGGAATATGCAACCAGTTACATTTGAGGCCATTTGGGCTTAAGCGTATTCCATGGAAAGTTATCGTCCCACATTTCGGAAATTATATTCCGAGCCAGCAAGAAAATCTTCTCTGTTACAATTTGACATAGCTAAAAACTGTACTAATCAAAATGAAAAATGTTTCTCTTGGGCGTAATCTCATACAATGATTACCCTTAAAGATCGAACATTTAAACAATAATATTTGATATGATATTTTCAATTTCTATGCTATGCCAAAGTGTCTGACATAATCAAACATTTGCGCATTCTTTGACCAAGAATAGTCAGCAAATTGTATTTTCAATCAATGCAGACCATTTGTTTCAGATTCGGAGATTTTTTGCTGCCAAACGGAATAACTATCATAGCTCACATTCTATTTACATCACTAAGAAGAGCATTGCAATCTGTTAGGCCTCAAGTTTAATTTTAAAATGCTACACCTTTGATGTTGTCTCTTTAAGCTTTGTATTTTTAATTACGAAAATATATAAGAACTACTCTACTCGGGTAAATTGTGACTAACTACACATAACTACATACTTAGCCCATATTTCCGTCCCTTTCTAGAATGAACGAAAACAGTATCTGGTTTTCCCGAAAATCTTATGAATTTAAAAATGCACTTTATTGCACATACTCACACATGCCTGCCATAAAATATGATTCGCGA
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13275,10 +13293,43 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Votre code...</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">extract_gb_gi</span><span class="p">(</span><span class="n">sequence</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;gb&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;gi&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">}</span>
+    
+    <span class="n">split_sequence</span> <span class="o">=</span> <span class="n">sequence</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;|&quot;</span><span class="p">)</span>
+    
+    <span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">split_sequence</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">split_sequence</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;gb&#39;</span><span class="p">:</span>
+            <span class="n">result</span><span class="p">[</span><span class="s2">&quot;gb&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">split_sequence</span><span class="p">[</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="n">split_sequence</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;gi&quot;</span><span class="p">:</span>
+            <span class="n">result</span><span class="p">[</span><span class="s2">&quot;gi&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">split_sequence</span><span class="p">[</span><span class="n">index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+        
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="n">gb_gi</span> <span class="o">=</span> <span class="n">extract_gb_gi</span><span class="p">(</span><span class="n">first_hit</span><span class="p">)</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="n">gb_gi</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;gb&#39;: &#39;AF466638.1&#39;, &#39;gi&#39;: &#39;18652235&#39;}
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13300,7 +13351,7 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<p>3</p>
 
 </div>
 </div>
@@ -13313,13 +13364,44 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">protein</span> <span class="o">=</span> <span class="s2">&quot;MAQPPPDQNFYHHPLPHTHTHPHPHSHPHPHSHPHPHHQHPQLQLPPQFRNPFDLLFDERTGAINYNYIR</span><span class="se">\</span>
+<span class="s2">PYLPNQMPKPEELPDSLVMRRPRRTRTTFTSSQIAELEQHFLQGRYLTAPRLADLSAKLALGTAQVKIWF</span><span class="se">\</span>
+<span class="s2">KNRRRRHKIQSDQHKDQSYEGMPLSPGMKQSDGDPPSLQTLSLGGGATPNALTPSPTPSTPTAHMTEHYS</span><span class="se">\</span>
+<span class="s2">ESFNAYYNYNGGHNHAQANRHMHMQYPSGGGPGPGSTNVNGGQFFQQQQVHNHQQQLHHQGNHVPHQMHQ</span><span class="se">\</span>
+<span class="s2">QQQQAQQQQYHHFDFQQKQASACRVLVKDEPEADYNFNSSYYMRSGMSGATASASAVARGAASPGSEVYE</span><span class="se">\</span>
+<span class="s2">PLTPKNDESPSLCGIGIGGPCAIAVGETEAADDMDDGTSKKTTLQILEPLKGLDKSCDDGSSDDMSTGIR</span><span class="se">\</span>
+<span class="s2">ALAGTGNRGAAFAKFGKPSPPQGPQPPLGMGGVAMGESNQYQCTMDTIMQAYNPHRNAAGNSQFAYCFN&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nombre de protéine : &#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">protein</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Nombre de protéine :  489
+</pre>
+</div>
+</div>
 
 </div>
 </div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13332,11 +13414,11 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Entrez</span>
-<span class="n">Entrez</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s2">&quot;xavier.brochet@heig-vd.ch&quot;</span> <span class="c1"># une adresse email valide est nécessaire</span>
+<span class="n">Entrez</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s2">&quot;vincent.guidoux1@heig-vd.ch&quot;</span> <span class="c1"># une adresse email valide est nécessaire</span>
 </pre></div>
 
     </div>
@@ -13354,10 +13436,10 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">accession</span> <span class="o">=</span> <span class="s1">&#39;AF466638&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">accession</span> <span class="o">=</span> <span class="s1">&#39;AF466638.1&#39;</span>
 <span class="c1"># rettype=&quot;fasta_cds_aa&quot;: returns the amino-acid sequence</span>
 <span class="c1"># rettype=&quot;fasta_cds_na&quot;: returns the nucleotides of the coding sequence</span>
 <span class="n">protein_seq</span><span class="o">=</span><span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s2">&quot;nuccore&quot;</span><span class="p">,</span><span class="nb">id</span><span class="o">=</span><span class="n">accession</span><span class="p">,</span><span class="n">rettype</span><span class="o">=</span><span class="s2">&quot;fasta_cds_aa&quot;</span><span class="p">,</span><span class="n">retmode</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="p">)</span>
@@ -13379,7 +13461,7 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fo</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">accession</span><span class="o">+</span><span class="s1">&#39;.fasta&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
@@ -13401,13 +13483,34 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Votre code...</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">handle_assession</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">accession</span><span class="o">+</span><span class="s1">&#39;.fasta&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="c1"># r = open for reading (default)</span>
+<span class="n">records_accession</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">SeqIO</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">handle_assession</span><span class="p">,</span> <span class="s1">&#39;fasta&#39;</span><span class="p">))</span>
+<span class="n">handle_assession</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">records_accession</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">seq</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>489
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13422,7 +13525,7 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">protein_info</span> <span class="o">=</span> <span class="n">Entrez</span><span class="o">.</span><span class="n">efetch</span><span class="p">(</span><span class="n">db</span><span class="o">=</span><span class="s1">&#39;nuccore&#39;</span><span class="p">,</span><span class="nb">id</span><span class="o">=</span><span class="n">accession</span><span class="p">,</span><span class="n">rettype</span><span class="o">=</span><span class="s1">&#39;gb&#39;</span><span class="p">,</span><span class="n">retmode</span><span class="o">=</span><span class="s1">&#39;xml&#39;</span><span class="p">)</span>
@@ -13431,6 +13534,24 @@ blastn permet d’identifier des séquences dont une partie au moins est similai
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[DictElement({&#39;GBSeq_locus&#39;: &#39;AF466638&#39;, &#39;GBSeq_length&#39;: &#39;4019&#39;, &#39;GBSeq_strandedness&#39;: &#39;double&#39;, &#39;GBSeq_moltype&#39;: &#39;DNA&#39;, &#39;GBSeq_topology&#39;: &#39;linear&#39;, &#39;GBSeq_division&#39;: &#39;INV&#39;, &#39;GBSeq_update-date&#39;: &#39;28-NOV-2008&#39;, &#39;GBSeq_create-date&#39;: &#39;12-FEB-2002&#39;, &#39;GBSeq_definition&#39;: &#39;Drosophila melanogaster isolate 362 bicoid (bcd) gene, complete cds&#39;, &#39;GBSeq_primary-accession&#39;: &#39;AF466638&#39;, &#39;GBSeq_accession-version&#39;: &#39;AF466638.1&#39;, &#39;GBSeq_other-seqids&#39;: [&#39;gb|AF466638.1|&#39;, &#39;gi|18652235&#39;], &#39;GBSeq_source&#39;: &#39;Drosophila melanogaster (fruit fly)&#39;, &#39;GBSeq_organism&#39;: &#39;Drosophila melanogaster&#39;, &#39;GBSeq_taxonomy&#39;: &#39;Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta; Pterygota; Neoptera; Holometabola; Diptera; Brachycera; Muscomorpha; Ephydroidea; Drosophilidae; Drosophila; Sophophora&#39;, &#39;GBSeq_references&#39;: [DictElement({&#39;GBReference_reference&#39;: &#39;1&#39;, &#39;GBReference_position&#39;: &#39;1..4019&#39;, &#39;GBReference_authors&#39;: [&#39;Baines,J.F.&#39;, &#39;Chen,Y.&#39;, &#39;Das,A.&#39;, &#39;Stephan,W.&#39;], &#39;GBReference_title&#39;: &#39;DNA Sequence Variation at a Duplicated Gene: Excess of Replacement Polymorphism and Extensive Haplotype Structure in the Drosophila melanogaster bicoid Region&#39;, &#39;GBReference_journal&#39;: &#39;Mol. Biol. Evol. 19 (7), 989-998 (2002)&#39;, &#39;GBReference_pubmed&#39;: &#39;12082119&#39;, &#39;GBReference_remark&#39;: &#39;Submitted&#39;}, attributes={}), DictElement({&#39;GBReference_reference&#39;: &#39;2&#39;, &#39;GBReference_position&#39;: &#39;1..4019&#39;, &#39;GBReference_authors&#39;: [&#39;Baines,J.F.&#39;, &#39;Chen,Y.&#39;, &#39;Das,A.&#39;, &#39;Stephan,W.&#39;], &#39;GBReference_title&#39;: &#39;Direct Submission&#39;, &#39;GBReference_journal&#39;: &#39;Submitted (09-JAN-2002) Department of Evolutionary Biology, University of Munich, Luisenstr. 14, 80333 Munich, Germany&#39;}, attributes={})], &#39;GBSeq_feature-table&#39;: [DictElement({&#39;GBFeature_key&#39;: &#39;source&#39;, &#39;GBFeature_location&#39;: &#39;1..4019&#39;, &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_from&#39;: &#39;1&#39;, &#39;GBInterval_to&#39;: &#39;4019&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={})], &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;organism&#39;, &#39;GBQualifier_value&#39;: &#39;Drosophila melanogaster&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;mol_type&#39;, &#39;GBQualifier_value&#39;: &#39;genomic DNA&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;isolate&#39;, &#39;GBQualifier_value&#39;: &#39;362&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;db_xref&#39;, &#39;GBQualifier_value&#39;: &#39;taxon:7227&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;chromosome&#39;, &#39;GBQualifier_value&#39;: &#39;3&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;country&#39;, &#39;GBQualifier_value&#39;: &#39;Zimbabwe&#39;}, attributes={})]}, attributes={}), DictElement({&#39;GBFeature_key&#39;: &#39;gene&#39;, &#39;GBFeature_location&#39;: &#39;&lt;446..&gt;3041&#39;, &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_from&#39;: &#39;446&#39;, &#39;GBInterval_to&#39;: &#39;3041&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={})], &#39;GBFeature_partial5&#39;: StringElement(&#39;&#39;, attributes={&#39;value&#39;: &#39;true&#39;}), &#39;GBFeature_partial3&#39;: StringElement(&#39;&#39;, attributes={&#39;value&#39;: &#39;true&#39;}), &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;gene&#39;, &#39;GBQualifier_value&#39;: &#39;bcd&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;note&#39;, &#39;GBQualifier_value&#39;: &#39;bicoid&#39;}, attributes={})]}, attributes={}), DictElement({&#39;GBFeature_key&#39;: &#39;mRNA&#39;, &#39;GBFeature_location&#39;: &#39;join(&lt;446..610,1170..1245,1301..2244,2757..&gt;3041)&#39;, &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_from&#39;: &#39;446&#39;, &#39;GBInterval_to&#39;: &#39;610&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={}), DictElement({&#39;GBInterval_from&#39;: &#39;1170&#39;, &#39;GBInterval_to&#39;: &#39;1245&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={}), DictElement({&#39;GBInterval_from&#39;: &#39;1301&#39;, &#39;GBInterval_to&#39;: &#39;2244&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={}), DictElement({&#39;GBInterval_from&#39;: &#39;2757&#39;, &#39;GBInterval_to&#39;: &#39;3041&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={})], &#39;GBFeature_operator&#39;: &#39;join&#39;, &#39;GBFeature_partial5&#39;: StringElement(&#39;&#39;, attributes={&#39;value&#39;: &#39;true&#39;}), &#39;GBFeature_partial3&#39;: StringElement(&#39;&#39;, attributes={&#39;value&#39;: &#39;true&#39;}), &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;gene&#39;, &#39;GBQualifier_value&#39;: &#39;bcd&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;product&#39;, &#39;GBQualifier_value&#39;: &#39;bicoid&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;transcription&#39;, &#39;GBQualifier_value&#39;: &#39;ATGGCGCAACCGCCGCCAGATCAAAACTTTTACCATCATCCGCTGCCCCACACGCACACACATCCGCATCCGCACTCCCATCCGCATCCGCACTCGCATCCGCACCCACATCACCAACATCCGCAGCTTCAGTTGCCGCCACAATTCCGAAATCCCTTCGATTTGCTTTTCGATGAGCGAACGGGAGCGATAAACTACAACTACATACGTCCGTATCTGCCCAACCAGATGCCCAAGCCAGAGGAGCTGCCCGACTCTCTGGTGATGCGGCGACCACGTCGCACCCGCACCACTTTTACCAGCTCTCAAATAGCAGAGCTGGAGCAGCACTTTCTGCAGGGACGATACCTCACAGCCCCCCGACTTGCGGATCTGTCAGCGAAACTAGCCCTGGGCACAGCCCAGGTGAAGATATGGTTTAAGAACCGTCGGCGTCGTCACAAGATCCAATCGGATCAGCACAAGGACCAGTCCTACGAGGGGATGCCTCTCTCGCCGGGTATGAAACAGAGCGATGGCGATCCCCCCAGCTTGCAGACTCTTAGCTTGGGTGGAGGAGCCACGCCCAACGCTTTGACTCCGTCACCCACGCCCTCAACGCCCACTGCACACATGACGGAGCACTACAGCGAGTCATTCAACGCCTACTACAACTACAATGGAGGCCACAATCACGCCCAGGCCAATCGTCACATGCACATGCAGTATCCTTCCGGAGGGGGGCCAGGACCTGGGTCGACCAATGTCAATGGCGGCCAGTTCTTCCAGCAGCAGCAGGTCCATAATCACCAGCAGCAACTGCACCACCAGGGCAACCACGTGCCGCACCAGATGCACCAGCAGCAACAGCAGGCTCAGCAGCAGCAATACCATCACTTTGACTTCCAGCAAAAGCAAGCCAGCGCCTGTCGCGTCCTGGTCAAGGACGAACCGGAGGCCGACTACAACTTCAACAGCTCGTACTACATGCGATCGGGAATGTCTGGCGCCACTGCATCGGCATCCGCTGTGGCCCGAGGCGCTGCCTCGCCGGGCTCCGAGGTCTACGAGCCATTAACACCCAAGAATGACGAAAGTCCGAGTCTGTGTGGCATCGGCATCGGCGGACCTTGCGCCATCGCCGTTGGCGAGACGGAGGCGGCCGACGACATGGACGACGGAACGAGCAAGAAGACGACGCTACAGATCTTGGAGCCTTTGAAGGGTCTGGACAAGAGCTGCGACGATGGCAGTAGCGACGACATGAGCACCGGAATAAGAGCCTTAGCAGGAACCGGAAATCGTGGAGCGGCATTTGCCAAATTTGGCAAGCCTTCGCCCCCACAAGGCCCTCAGCCGCCCCTCGGGATGGGGGGCGTGGCCATGGGCGAATCGAACCAATATCAATGCACGATGGATACGATAATGCAAGCGTATAATCCCCATCGGAACGCCGCGGGCAACTCGCAGTTTGCCTACTGCTTCAATTAG&#39;}, attributes={})]}, attributes={}), DictElement({&#39;GBFeature_key&#39;: &#39;CDS&#39;, &#39;GBFeature_location&#39;: &#39;join(446..610,1170..1245,1301..2244,2757..3041)&#39;, &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_from&#39;: &#39;446&#39;, &#39;GBInterval_to&#39;: &#39;610&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={}), DictElement({&#39;GBInterval_from&#39;: &#39;1170&#39;, &#39;GBInterval_to&#39;: &#39;1245&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={}), DictElement({&#39;GBInterval_from&#39;: &#39;1301&#39;, &#39;GBInterval_to&#39;: &#39;2244&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={}), DictElement({&#39;GBInterval_from&#39;: &#39;2757&#39;, &#39;GBInterval_to&#39;: &#39;3041&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={})], &#39;GBFeature_operator&#39;: &#39;join&#39;, &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;gene&#39;, &#39;GBQualifier_value&#39;: &#39;bcd&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;codon_start&#39;, &#39;GBQualifier_value&#39;: &#39;1&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;transl_table&#39;, &#39;GBQualifier_value&#39;: &#39;1&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;product&#39;, &#39;GBQualifier_value&#39;: &#39;bicoid&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;protein_id&#39;, &#39;GBQualifier_value&#39;: &#39;AAL77025.1&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;translation&#39;, &#39;GBQualifier_value&#39;: &#39;MAQPPPDQNFYHHPLPHTHTHPHPHSHPHPHSHPHPHHQHPQLQLPPQFRNPFDLLFDERTGAINYNYIRPYLPNQMPKPEELPDSLVMRRPRRTRTTFTSSQIAELEQHFLQGRYLTAPRLADLSAKLALGTAQVKIWFKNRRRRHKIQSDQHKDQSYEGMPLSPGMKQSDGDPPSLQTLSLGGGATPNALTPSPTPSTPTAHMTEHYSESFNAYYNYNGGHNHAQANRHMHMQYPSGGGPGPGSTNVNGGQFFQQQQVHNHQQQLHHQGNHVPHQMHQQQQQAQQQQYHHFDFQQKQASACRVLVKDEPEADYNFNSSYYMRSGMSGATASASAVARGAASPGSEVYEPLTPKNDESPSLCGIGIGGPCAIAVGETEAADDMDDGTSKKTTLQILEPLKGLDKSCDDGSSDDMSTGIRALAGTGNRGAAFAKFGKPSPPQGPQPPLGMGGVAMGESNQYQCTMDTIMQAYNPHRNAAGNSQFAYCFN&#39;}, attributes={})]}, attributes={}), DictElement({&#39;GBFeature_key&#39;: &#39;exon&#39;, &#39;GBFeature_location&#39;: &#39;&lt;446..610&#39;, &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_from&#39;: &#39;446&#39;, &#39;GBInterval_to&#39;: &#39;610&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={})], &#39;GBFeature_partial5&#39;: StringElement(&#39;&#39;, attributes={&#39;value&#39;: &#39;true&#39;}), &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;gene&#39;, &#39;GBQualifier_value&#39;: &#39;bcd&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;number&#39;, &#39;GBQualifier_value&#39;: &#39;1&#39;}, attributes={})]}, attributes={}), DictElement({&#39;GBFeature_key&#39;: &#39;exon&#39;, &#39;GBFeature_location&#39;: &#39;1170..1245&#39;, &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_from&#39;: &#39;1170&#39;, &#39;GBInterval_to&#39;: &#39;1245&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={})], &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;gene&#39;, &#39;GBQualifier_value&#39;: &#39;bcd&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;number&#39;, &#39;GBQualifier_value&#39;: &#39;2&#39;}, attributes={})]}, attributes={}), DictElement({&#39;GBFeature_key&#39;: &#39;exon&#39;, &#39;GBFeature_location&#39;: &#39;1301..2244&#39;, &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_from&#39;: &#39;1301&#39;, &#39;GBInterval_to&#39;: &#39;2244&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={})], &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;gene&#39;, &#39;GBQualifier_value&#39;: &#39;bcd&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;number&#39;, &#39;GBQualifier_value&#39;: &#39;3&#39;}, attributes={})]}, attributes={}), DictElement({&#39;GBFeature_key&#39;: &#39;exon&#39;, &#39;GBFeature_location&#39;: &#39;2757..&gt;3041&#39;, &#39;GBFeature_intervals&#39;: [DictElement({&#39;GBInterval_from&#39;: &#39;2757&#39;, &#39;GBInterval_to&#39;: &#39;3041&#39;, &#39;GBInterval_accession&#39;: &#39;AF466638.1&#39;}, attributes={})], &#39;GBFeature_partial3&#39;: StringElement(&#39;&#39;, attributes={&#39;value&#39;: &#39;true&#39;}), &#39;GBFeature_quals&#39;: [DictElement({&#39;GBQualifier_name&#39;: &#39;gene&#39;, &#39;GBQualifier_value&#39;: &#39;bcd&#39;}, attributes={}), DictElement({&#39;GBQualifier_name&#39;: &#39;number&#39;, &#39;GBQualifier_value&#39;: &#39;4&#39;}, attributes={})]}, attributes={})], &#39;GBSeq_sequence&#39;: &#39;acagcccgacagggggctttctactgctgtctcttcacgccccctggtgaaaacgccgtgcactcaatcggtttgcagctttgccgtactgttcgattaaaaacttttaaattagaggcaaacatttaaaaataaaatgtccaaatatttgtctaaaatgtattgtagacgcttattgatttttaaattactcaaaagaatgaacatcgagggagggccgccaattgtgccatctctacatctcttcgctcatccctaaataacggcactctgcagatgcgaagcagtggatcgcaaaaacgcaaaatgtgggcgaaataagttcgcgagcgtctcgaaagtaaccggttactgaaaatacaagaaagtttccacactcctttgccatttttccgcgcggcgcttggaaattcgtaaagataacgcggcggagtgtttggggaaaatggcgcaaccgccgccagatcaaaacttttaccatcatccgctgccccacacgcacacacatccgcatccgcactcccatccgcatccgcactcgcatccgcacccacatcaccaacatccgcagcttcagttgccgccacaattccgaaatcccttcgatttggtgagttcccatcgcagcagagaagggctcttgtcccaggaaagctacagtacagattccctatggtgaacaaacaaccagtgcgatcactgatgaccataaacatttattgagccgcagcaaatgtgtttctagaacatagggcgaaatcttctattatcttgtttgtgacttttaaagtatcgtagcagaatctaaataacaattgatattattaatcgttacagttagtatagtatataattgtatatgaattgtggggcaacatgttattagtgatttgccgaaatgttctaaaagatgtttcattgaaatggacgaatgttaaacctgttgcactcacaccgacaatcagtaatgtctatttttcaaaagccacatctatggccactgggtatacattattgactttatacacttcatacaacatattttcaaaaacaagcattgttgtcctgcatgatgattagtgaaagtaatattgcaagcttcggtccccgaagcgaatcgtcctttcacgtttttatataaagacagtgtaccccttgattctttgaagcttttcgatgagcgaacgggagcgataaactacaactacatacgtccgtatctgcccaaccagatgcccaagccaggtgagctcaaagccaacaaagtcagccatcgtcttatcagatgtctttccctcagaggagctgcccgactctctggtgatgcggcgaccacgtcgcacccgcaccacttttaccagctctcaaatagcagagctggagcagcactttctgcagggacgatacctcacagccccccgacttgcggatctgtcagcgaaactagccctgggcacagcccaggtgaagatatggtttaagaaccgtcggcgtcgtcacaagatccaatcggatcagcacaaggaccagtcctacgaggggatgcctctctcgccgggtatgaaacagagcgatggcgatccccccagcttgcagactcttagcttgggtggaggagccacgcccaacgctttgactccgtcacccacgccctcaacgcccactgcacacatgacggagcactacagcgagtcattcaacgcctactacaactacaatggaggccacaatcacgcccaggccaatcgtcacatgcacatgcagtatccttccggaggggggccaggacctgggtcgaccaatgtcaatggcggccagttcttccagcagcagcaggtccataatcaccagcagcaactgcaccaccagggcaaccacgtgccgcaccagatgcaccagcagcaacagcaggctcagcagcagcaataccatcactttgacttccagcaaaagcaagccagcgcctgtcgcgtcctggtcaaggacgaaccggaggccgactacaacttcaacagctcgtactacatgcgatcgggaatgtctggcgccactgcatcggcatccgctgtggcccgaggcgctgcctcgccgggctccgaggtctacgagccattaacacccaagaatgacgaaagtccgagtctgtgtggcatcggcatcggcggaccttgcgccatcgccgttggcgagacggaggcggccgacgacatggacgacggaacgagcaagaagacgacgctacaggtcaggcatgagtccacaaccttttttgatctcttgattctgagtgtggcgtttataaattgaagctttaagctttgtaactttcaaactgtctggtttgagatgttattctgaaagtacttctatttccgatcgatgagatttgggagttctccaatatttaacatttaacttattaagtttttgttttctaaattagacatggcatttctgaaagggaagtacaagtgttaaagatgtattttaatatagaatttgtatcaaaggttaagatttcaaccgtttgaaagcccttagttttcagggttttttacttttttattcatgtaatcactcttaatacactgcaagttaaaatagcatttctttgaccagaaaaataagatctatgcattttaaaagtgaaaacagactcatatgctgatgaacatttttagctataaattgtaacaataatttagcaatttcaattgaatttatttatgttctaaatgcgttcgctctctccctagatcttggagcctttgaagggtctggacaagagctgcgacgatggcagtagcgacgacatgagcaccggaataagagccttagcaggaaccggaaatcgtggagcggcatttgccaaatttggcaagccttcgcccccacaaggccctcagccgcccctcgggatggggggcgtggccatgggcgaatcgaaccaatatcaatgcacgatggatacgataatgcaagcgtataatccccatcggaacgccgcgggcaactcgcagtttgcctactgcttcaattagcctggacgagaggcgtgttagagagtttcattagctttaggttaaccactgttgttcctgattgtacaaataccaagtgattgtagatatctacgcgtagaaagttaggtctagtcctaagatccgtgtaaatggttcccagggaagttttatgtactagcctagtcagcaggccgcacggattccagtgcatatcttagtgatactccagttaactctatactttccctgcaatacgctattcgccttagatgtatctgggtggctgctccactaaagcccgggaatatgcaaccagttacatttgaggccatttgggcttaagcgtattccatggaaagttatcgtcccacatttcggaaattatattccgagccagcaagaaaatcttctctgttacaatttgacatagctaaaaactgtactaatcaaaatgaaaaatgtttctcttgggcgtaatctcatacaatgattacccttaaagatcgaacatttaaacaataatatttgatatgatattttcaatttctatgctatgccaaagtgtctgacataatcaaacatttgcgcattctttgaccaagaatagtcagcaaattgtattttcaatcaatgcagaccatttgtttcagattcggagattttttgctgccaaacggaataactatcatagctcacattctatttacatcactaagaagagcattgcaatctgttaggcctcaagtttaattttaaaatgctacacctttgatgttgtctctttaagctttgtatttttaattacgaaaatatataagaactactctactcgggtaaattgtgactaactacacataactacatacttagcccatatttccgtccctttctagaatgaacgaaaacagtatctggttttcccgaaaatcttatgaatttaaaaatgcactttattgcacatactcacacatgcctgccataaaatatgattcgcga&#39;}, attributes={})]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13446,13 +13567,36 @@ et faites un loop sur les features jusqu’à tomber sur 'chromosome'.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Votre code...  </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="n">protein_info</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;GBSeq_feature-table&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;GBFeature_quals&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">feature</span> <span class="ow">in</span> <span class="n">features</span><span class="p">:</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">feature</span><span class="p">[</span><span class="s1">&#39;GBQualifier_name&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;chromosome&#39;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;N° du chromosome : &#39;</span><span class="p">,</span> <span class="n">feature</span><span class="p">[</span><span class="s1">&#39;GBQualifier_value&#39;</span><span class="p">])</span>
+        <span class="k">break</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>N° du chromosome :  3
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13472,10 +13616,50 @@ et faites un loop sur les features jusqu’à tomber sur 'chromosome'.</p>
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;GenBank[97:157] :&quot;</span><span class="p">,</span> <span class="n">protein</span><span class="p">[</span><span class="mi">97</span><span class="p">:</span><span class="mi">157</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Uniprot         : PRRTRTTFTSSQIAELEQHFLQGRYLTAPRLADLSAKLALGTAQVKIWFKNRRRRHKIQS&quot;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;GenBank[91:151] :&quot;</span><span class="p">,</span> <span class="n">protein</span><span class="p">[</span><span class="mi">91</span><span class="p">:</span><span class="mi">151</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>GenBank[97:157] : TFTSSQIAELEQHFLQGRYLTAPRLADLSAKLALGTAQVKIWFKNRRRRHKIQSDQHKDQ
+Uniprot         : PRRTRTTFTSSQIAELEQHFLQGRYLTAPRLADLSAKLALGTAQVKIWFKNRRRRHKIQS
+GenBank[91:151] : PRRTRTTFTSSQIAELEQHFLQGRYLTAPRLADLSAKLALGTAQVKIWFKNRRRRHKIQS
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<p>Position initiale : 97
+Position finale : 156
+Longueur totale : 60</p>
+<p>Parce qu'Uniprot ne représente qu'une partie de la protéine, représente à quel endroit on va si "accrocher" pour se lier</p>
+<p>Non, les positions ne sont pas correct</p>
+<p>Pas les même exons</p>
 
 </div>
 </div>
@@ -13492,7 +13676,7 @@ et faites un loop sur les features jusqu’à tomber sur 'chromosome'.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<p>Dans le noyau, oui c'est compatible, c'est ici qu'on va binder les séquences</p>
 
 </div>
 </div>
@@ -13508,7 +13692,9 @@ et faites un loop sur les features jusqu’à tomber sur 'chromosome'.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<p>Hélice Alpha, elle permet d'exposer la protéine.</p>
+<p><a href="https://www.uniprot.org/uniprot/P09081">https://www.uniprot.org/uniprot/P09081</a></p>
+<p>Elles sont violettes</p>
 
 </div>
 </div>
@@ -13528,7 +13714,7 @@ export LANG=en_US.UTF-8</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">xml.dom</span> <span class="k">import</span> <span class="n">minidom</span>
@@ -13551,10 +13737,10 @@ export LANG=en_US.UTF-8</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;http://www.uniprot.org/uniprot/?query=database:(type:embl+id:&#39;</span><span class="o">+</span><span class="n">accession</span><span class="o">+</span><span class="s1">&#39;)&amp;format=tab&#39;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span><span class="o">=</span><span class="s1">&#39;http://www.uniprot.org/uniprot/?query=database:(type:embl+id:&#39;</span><span class="o">+</span><span class="n">accession</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span><span class="o">+</span><span class="s1">&#39;)&amp;format=tab&#39;</span>
 <span class="n">uniprot_ref</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 <span class="n">uniprot_ref</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">uniprot_ref</span><span class="p">,</span><span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="n">uniprot_ref</span> <span class="o">=</span> <span class="n">uniprot_ref</span><span class="p">[</span><span class="s1">&#39;Entry&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
@@ -13562,6 +13748,24 @@ export LANG=en_US.UTF-8</p>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>P09081
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13576,10 +13780,11 @@ export LANG=en_US.UTF-8</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://www.uniprot.org/uniprot/&#39;</span><span class="o">+</span><span class="n">uniprot_ref</span><span class="o">+</span><span class="s1">&#39;.xml&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 <span class="n">dom</span> <span class="o">=</span> <span class="n">minidom</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">))</span>
 <span class="n">sDB</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">eDB</span> <span class="o">=</span> <span class="p">[]</span>
@@ -13591,10 +13796,30 @@ export LANG=en_US.UTF-8</p>
         <span class="n">sDB</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sDB</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="s1">&#39;position&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
         <span class="n">eDB</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;end&#39;</span><span class="p">)</span>
         <span class="n">eDB</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">eDB</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="s1">&#39;position&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        
 <span class="nb">print</span><span class="p">(</span><span class="n">domain_type</span><span class="o">+</span><span class="s1">&#39;: &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">sDB</span><span class="p">)</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">eDB</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>http://www.uniprot.org/uniprot/P09081.xml
+DNA-binding region: 97-156
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13609,13 +13834,34 @@ export LANG=en_US.UTF-8</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Votre code...</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">dom</span><span class="o">.</span><span class="n">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;sequence&#39;</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">(</span><span class="s1">&#39;length&#39;</span> <span class="ow">in</span> <span class="n">node</span><span class="o">.</span><span class="n">attributes</span><span class="p">):</span>
+        <span class="n">length</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">node</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="s1">&#39;length&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">length</span><span class="p">)</span>  
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>494
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13633,7 +13879,11 @@ export LANG=en_US.UTF-8</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<p>Oui, HOXB2, Increased expression of this gene is associated with pancreatic cancer</p>
+<p><a href="https://www.ncbi.nlm.nih.gov/protein/XP_005257332.1?report=genbank&amp;log$=protalign&amp;blast_rank=1&amp;RID=8JZ4KEDS014">source</a>
+<a href="https://www.genecards.org/cgi-bin/carddisp.pl?gene=HOXB2">source</a></p>
+<p><strong>Non</strong> en fait, je me suis trompé, il n'existe pas d'homologue chez l'être humain</p>
+<p><a href=".\Homologue_humain.PNG">Homologue_humain</a></p>
 
 </div>
 </div>
@@ -13649,7 +13899,7 @@ export LANG=en_US.UTF-8</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<p>Nous avons collecter tellement plus de données sur le génome humain, qu'il a besoin de sa propre base de donnée</p>
 
 </div>
 </div>
@@ -13672,7 +13922,8 @@ Un grand nombre de résultats s’affiche.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<p>"[...] indicate that there must be a bicoid ortholog [...] presumably forms a gradient from the anterior end [..] in Drosophila"</p>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC34318/">source</a></p>
 
 </div>
 </div>
@@ -13687,27 +13938,37 @@ Un grand nombre de résultats s’affiche.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %matplotlib inline</span>
 
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">urllib</span><span class="o">,</span> <span class="nn">io</span>
-<span class="kn">from</span> <span class="nn">PIL</span> <span class="k">import</span> <span class="n">Image</span>
+<span class="c1"># import numpy as np</span>
+<span class="c1"># import matplotlib.pyplot as plt</span>
+<span class="c1"># import urllib, io</span>
+<span class="c1"># from PIL import Image</span>
 
 
-<span class="n">file</span> <span class="o">=</span> <span class="n">io</span><span class="o">.</span><span class="n">BytesIO</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://palaeos.com/metazoa/glossary/images/bcd-evx-cdx.Expression.jpg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
-<span class="n">img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">num</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">),</span><span class="n">dpi</span><span class="o">=</span><span class="mi">150</span><span class="p">)</span> 
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="c1"># file = io.BytesIO(urllib.request.urlopen(&#39;http://palaeos.com/metazoa/glossary/images/bcd-evx-cdx.Expression.jpg&#39;).read())</span>
+<span class="c1"># img = np.array(Image.open(file))</span>
+<span class="c1"># plt.figure(num=None,figsize=(10,5),dpi=150) </span>
+<span class="c1"># plt.imshow(img)</span>
+
+<span class="c1"># un petit problème d&#39;environnement empêche ce code de fonctionner</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="http://palaeos.com/metazoa/glossary/images/bcd-evx-cdx.Expression.jpg">image</a></p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13719,7 +13980,7 @@ Un grand nombre de résultats s’affiche.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio</span> <span class="k">import</span> <span class="n">Medline</span>
@@ -13730,6 +13991,25 @@ Un grand nombre de résultats s’affiche.</p>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Title: The chemical basis of morphogenesis. 1953.
+Author: Turing, A M
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13745,7 +14025,7 @@ Un grand nombre de résultats s’affiche.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<p>C'est Alan Turing, il est connu pour être un des pères de l'informatique</p>
 
 </div>
 </div>
@@ -13769,7 +14049,20 @@ Une fois que le biologiste a extrait l’ADN de l’échantillon, c’est au bio
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Votre réponse...</p>
+<p>"le défi majeur de la bioinformatique à l'ère du séquençage haut-débit : nous générons actuellement bien plus de données que ce que nous sommes capables d'interpréter" - Léa Siegwald, Solutions d'amélioration des études de métagénomique ciblée, 2017</p>
+<p>Le problème est qu'il est nécessaire de comparer des données pour arriver à un résultat, et ces données, il faut les avoir ! Mais ça demande du temps, du travail et de l'argent.</p>
+<p>Les étapes à suivre en métagénomique :</p>
+
+<pre><code>- Echantillonner un microbiote
+- Extraire et fragmenter des ADN
+- Sequencer globalement les fragments
+- Aligner sur tous les génomes bactériens connus
+
+</code></pre>
+<p>glossaire:
+Le <strong>microbiote</strong> est l'ensemble des micro-organismes (bactéries, virus, champignons, levures) vivants dans un environnement spécifique appelé <strong>microbiome</strong></p>
+<p>sources:
+<a href="http://dridk.me/metagenomique.html">Introduction à la métagénomique</a></p>
 
 </div>
 </div>
